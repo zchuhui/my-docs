@@ -11,7 +11,12 @@
   <!-- 移动端适配 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <!-- Docsify v4 -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css"> 
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css"> -->
+   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css"> --> 
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dolphin.css">  -->
 </head>
 <body>
   <div id="app"></div>
@@ -33,22 +38,23 @@
       subMaxLevel: 4,
       // 小屏设备下合并导航栏到侧边栏
       mergeNavbar: true,
-      routerMode: 'history', // 关键配置
-      search: 'auto',
-      search: {
-          maxAge: 86400000,// 过期时间，单位毫秒，默认一天
-          // paths: auto,// 注意：仅适用于 paths: 'auto' 模式
-          placeholder: '搜索',
-          // 支持本地化
-          placeholder: {
-              '/': '搜索',
-              '/zh-cn/': '搜索'
-          },
-          noData: '找不到结果',
-          depth: 4,
-          hideOtherSidebarContent: false,
-          namespace: 'Docsify-Guide',
-      }
+      // routerMode: 'history', // 关键配置
+
+      // search: false,
+      // search: {
+      //     maxAge: 86400000,// 过期时间，单位毫秒，默认一天
+      //     // paths: auto,// 注意：仅适用于 paths: 'auto' 模式
+      //     placeholder: '搜索',
+      //     // 支持本地化
+      //     placeholder: {
+      //         '/': '搜索',
+      //         '/zh-cn/': '搜索'
+      //     },
+      //     noData: '找不到结果',
+      //     depth: 4,
+      //     hideOtherSidebarContent: false,
+      //     namespace: 'Docsify-Guide',
+      // }
 
       // themeColor: '#3F51B5', // 主题颜色
       // // 404
