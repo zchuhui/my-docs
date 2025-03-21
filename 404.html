@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<script>
+  sessionStorage.redirect = location.href;
+  location.replace(location.href.replace(/\/\/[^/]+/, ''));
+</script>
+<meta http-equiv="refresh" content="0;URL='/'" />
