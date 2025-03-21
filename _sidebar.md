@@ -6,7 +6,7 @@
 
 - 📚 前端开发
   - [📖 JavaScript]
-    - [🚀 javaScript](/fe/base.md)
+    - [🚀 javaScript](fe/base.md)
     - [🚀 数组](guide/array)
     - [🚀 字符串](guide/string)
     - [🚀 正则表达式](guide/regexp)
