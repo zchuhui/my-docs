@@ -1,22 +1,20 @@
-# JavaScript 完整学习大纲
+# JavaScript 大纲
 
 ## 一、JavaScript 基础
 ### 1. 语言特性
-- 动态类型
-- 解释型语言
-- 单线程与事件循环
-- 原型继承
+- 动态类型: JavaScript 是一种动态类型语言。
+- 解释型语言: JavaScript 是一种解释型语言，不需要编译。
+- 单线程与事件循环: JavaScript 是单线程的，所有代码都在一个线程上运行。事件循环是一种处理异步操作的机制。
+- 原型继承: JavaScript 使用原型继承来实现对象的继承。
+- 函数式编程: JavaScript 支持函数式编程的特性。
+
 
 ### 2. 基础语法
-```javascript
-// 代码示例
-let message = "Hello World";
-console.log(message);
-```
+
 - 变量声明：`var`/`let`/`const`
-- 数据类型：Primitive & Object
-- 类型转换与检测
-- 运算符与表达式
+- 数据类型: 基本类型（`number`、`string`、`boolean`、`null`、`undefined`）和引用类型（`object`）
+- 类型转换与检测:
+- 运算符与表达式:
 - 代码注释规范
 
 ### 3. 流程控制
