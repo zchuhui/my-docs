@@ -2,21 +2,24 @@ package main
 
 import "fmt"
 
-type Animal interface {
-	Speak() string
-}
-
-type Dog struct {
-	Name string
-	Age  int
-}
-
-func (dog Dog) Speak() string {
-	return "Woof!"
+func add(a int, b int) (x, y int) {
+	x = a * b
+	return x, y
 }
 
 func main() {
-	dog := Dog{Name: "Buddy", Age: 3}
-	var animal Animal = dog
-	fmt.Println(animal.Speak())
+	var arr [3]int
+	arr[1] = 3
+
+	colors := []string{"red", "green"}
+	colors = append(colors, "blue")
+
+	phonebook := map[string]string{
+		"1": "123456",
+		"2": "323232323",
+	}
+
+	fmt.Println(arr[2], colors[0:3], phonebook["1"])
+	var c, d = add(1, 2)
+	fmt.Println(c, d)
 }
