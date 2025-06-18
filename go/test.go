@@ -1,25 +1,33 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
-// 定义一个结构体
-type Rectangle struct {
-	width, height float64
+type Person struct {
+	Name string
+	Age  int
 }
 
-// 定义一个方法：计算面积
-func (r Rectangle) Area() float64 {
-	return r.width * r.height
-}
+// ByAge 定义了一个自定义类型，用于按照年龄排序
+type ByAge []Person
 
-// 定义一个方法：修改宽度
-func (r Rectangle) SetWidth(newWidth float64) {
-	r.width = newWidth
-}
+func (a ByAge) Len() int           { return len(a) }              // 实现sort.Interface接口
+func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }    // 实现sort.Interface接口
+func (a ByAge) Less(i, j int) bool { return a[i].Age < a[j].Age } // 实现sort.Interface接口
 
 func main() {
+	people := []Person{
+		{"Alice", 25},
+		{"Bob", 30},
+		{"Charlie", 20},
+	}
 
-	rect := Rectangle{width: 10, height: 5}
-	rect.SetWidth(2000)
-	fmt.Println("矩形的宽度是:", rect.width, "矩形的面积是:", rect.Area())
+	sort.Sort(ByAge(people))
+	// 输出: [{Charlie 20} {Alice 25} {Bob 30}]
+	ByAge(people).Swap(0, 1)
+	fmt.Println(people)
+	fmt.Println(ByAge(people).Less(0, 1))
+	fmt.Println(ByAge(people).Len())
 }
