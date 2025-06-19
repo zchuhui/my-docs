@@ -73,3 +73,29 @@
          └─ :w → 仅保存
 ```
 
+## 网络与端口
+
+查看端口是否占用：
+
+```cmd
+# Linux/Mac 检查端口占用
+netstat -tulnp | grep 5432
+# 或
+lsof -i :5432
+```
+
+查看进程：
+
+```cmd
+# Linux/Mac 检查进程占用
+ps aux | grep 5432
+```
+
+杀死进程：
+
+```cmd
+# Linux/Mac 杀死进程
+kill -9 进程ID
+```
+
+
